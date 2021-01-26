@@ -29,17 +29,26 @@ class Box {
 
 
     pop ()
-  }
+    }
     else{
       World.remove(world, this.body);
       push ();
       
-     this.visibilty = this.visibility - 5;
+     this.visibility = this.visibility - 5;
       
       
       pop ();
     }
   }
+
+  
+
+  score(){
+    if(this.visibility <- 500){
+      score = score+1;
+
+      
+    }
 };
 
-
+}

@@ -7,6 +7,8 @@ var engine, world;
 
 var ground;
 
+var score = 0;
+
 function preload(){
     img=loadImage("polygon.png");
 }
@@ -74,6 +76,9 @@ slingShot = new SlingShot(this.ball,{x:200,y:200});
 function draw(){
 
     background("aqua");
+
+    fill("black")
+    text("Score : "+ score, 750,40)
     
     Engine.update(engine);
 
@@ -83,6 +88,13 @@ function draw(){
     layer2.display();
 
     fill("yellow")
+    b1.score();
+    b2.score();
+    b3.score();
+    b4.score();
+    b5.score();
+    b6.score()
+
     b1.display();
     b2.display();
     b3.display();
@@ -91,15 +103,28 @@ function draw(){
     b6.display()
 
     fill("blue")
-    b7.display();
+    b7.score();
+     b8.score();
+     b9.score();
+     b10.score();
+
+     b7.display();
      b8.display();
      b9.display();
      b10.display();
 
      fill("orange")
+     b11.score();
      b11.display();
 
      fill("pink")
+     b12.score();
+     b13.score();
+     b14.score();
+     b15.score();
+     b16.score();
+     b17.score();
+
      b12.display();
      b13.display();
      b14.display();
@@ -108,12 +133,18 @@ function draw(){
      b17.display();
     
     fill("red")
+     b18.score();
+     b19.score();
+     b20.score();
+     b21.score();
+
      b18.display();
      b19.display();
      b20.display();
      b21.display();
     
      fill("white")
+     b22.score();
      b22.display();
 
    imageMode(CENTER)
